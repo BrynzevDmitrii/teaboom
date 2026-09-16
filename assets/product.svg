@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title">
+  <title id="title">Пачка чая «Ананасовый улун»</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef6ee"/>
+      <stop offset="100%" stop-color="#dcebdf"/>
+    </linearGradient>
+    <linearGradient id="tin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5f9e73"/>
+      <stop offset="100%" stop-color="#3f7a52"/>
+    </linearGradient>
+    <linearGradient id="lid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7d774"/>
+      <stop offset="100%" stop-color="#e8b93f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="320" height="320" rx="16" fill="url(#bg)"/>
+
+  <ellipse cx="160" cy="270" rx="90" ry="14" fill="#3f7a52" opacity="0.12"/>
+
+  <rect x="95" y="120" width="130" height="150" rx="14" fill="url(#tin)"/>
+  <rect x="95" y="120" width="130" height="34" rx="14" fill="url(#lid)"/>
+  <rect x="95" y="146" width="130" height="8" fill="#c99a2e" opacity="0.6"/>
+
+  <g transform="translate(160 205)">
+    <path d="M0 -46 C 16 -46 26 -30 22 -12 C 34 -18 46 -8 42 6 C 52 6 56 20 46 28 C 50 40 36 48 24 42 C 20 52 4 54 -2 44 C -14 52 -28 44 -26 32 C -38 32 -42 18 -32 10 C -40 0 -32 -14 -18 -12 C -20 -30 -14 -46 0 -46 Z"
+      fill="#f6c945" stroke="#d99c1f" stroke-width="2"/>
+    <path d="M-18 -12 L18 -12 M-26 6 L22 6 M-24 24 L18 24" stroke="#d99c1f" stroke-width="1.5" fill="none" opacity="0.7"/>
+  </g>
+
+  <g fill="#3f7a52">
+    <path d="M160 156 C 150 140 150 120 168 108 C 168 128 164 144 160 156 Z"/>
+    <path d="M160 156 C 172 142 190 138 202 150 C 186 156 172 158 160 156 Z"/>
+    <path d="M160 156 C 148 146 132 146 122 158 C 136 162 150 162 160 156 Z"/>
+  </g>
+
+  <text x="160" y="240" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">TEABOOM</text>
+</svg>

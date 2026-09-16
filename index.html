@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Ананасовый улун — Teaboom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <article class="product" itemscope itemtype="https://schema.org/Product">
+            <div class="product__container">
+                <section class="product__gallery" aria-label="Изображение товара">
+                    <img class="product__image" src="assets/product.svg" width="320" height="320"
+                        alt="Пачка чая «Ананасовый улун» Teaboom" itemprop="image">
+                </section>
+
+                <section class="product__info">
+                    <nav class="product__breadcrumbs" aria-label="Хлебные крошки">
+                        <ol>
+                            <li><a href="#">Улун</a></li>
+                            <li><a href="#">Ароматизированный улун</a></li>
+                            <li aria-current="page">Китайский светлый ароматизированный улун</li>
+                        </ol>
+                    </nav>
+
+                    <h1 class="product__title" itemprop="name">Ананасовый улун</h1>
+
+                    <fieldset class="product__packaging">
+                        <legend class="product__label">Фасовка:</legend>
+                        <div class="packaging__list" id="packagingList">
+                            <label class="packaging__item">
+                                <input type="radio" name="packaging" value="100g" data-price="326.40"
+                                    data-old-price="349.20" data-sku="01306" checked>
+                                <span>100 г</span>
+                            </label>
+                            <label class="packaging__item">
+                                <input type="radio" name="packaging" value="500g" data-price="1432"
+                                    data-old-price="1646" data-sku="01307">
+                                <span>500 г</span>
+                            </label>
+                            <label class="packaging__item">
+                                <input type="radio" name="packaging" value="1000g" data-price="2064"
+                                    data-old-price="2592" data-sku="01308">
+                                <span>1000 г</span>
+                            </label>
+                            <label class="packaging__item">
+                                <input type="radio" name="packaging" value="5000g" data-price="6320"
+                                    data-old-price="8710" data-sku="01309">
+                                <span>5000 г</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <p class="product__sku">Артикул: <span id="sku">01306</span></p>
+
+                    <div class="product__price-block" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        <span class="product__price" id="price" itemprop="price" content="326.40">326,40 ₽</span>
+                        <del class="product__old-price" id="oldPrice">349,20 ₽</del>
+                        <meta itemprop="priceCurrency" content="RUB">
+                    </div>
+
+                    <button class="product__cart-btn" id="cartBtn" type="button">
+                        <span id="cartBtnText">В корзину</span>
+                    </button>
+
+                    <section class="product__description" itemprop="description">
+                        <h2 class="product__description-title">Описание</h2>
+                        <p>Состав: китайский бирюзовый чай, цукаты, натуральные ароматические масла. Светлый
+                            Фуцзяньский улун с ароматом ананаса.</p>
+                        <p>В сухом виде — крупный лист изумрудного цвета. В прогретой посуде раскрывается аромат
+                            свежей зелени и спелого ананаса.</p>
+                    </section>
+                </section>
+            </div>
+        </article>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
