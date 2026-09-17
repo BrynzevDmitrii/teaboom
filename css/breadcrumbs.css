@@ -1,0 +1,28 @@
+.product__breadcrumbs {
+    margin-bottom: 0.5rem;
+}
+
+.product__breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    font-size: 0.8125rem;
+    color: var(--color-text-subtle);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.product__breadcrumbs li:not(:last-child)::after {
+    content: '/';
+    margin-left: 0.25rem;
+    color: var(--color-border-subtle);
+}
+
+.product__breadcrumbs a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.product__breadcrumbs li[aria-current='page'] {
+    color: var(--color-text-subtle);
+}

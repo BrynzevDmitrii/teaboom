@@ -5,12 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Ананасовый улун — Teaboom</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/breadcrumbs.css">
+    <link rel="stylesheet" href="css/packaging.css">
+    <link rel="stylesheet" href="css/price.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/description.css">
+    <link rel="stylesheet" href="css/image-dialog.css">
 </head>
 
 <body>
     <main>
-        <article class="product" itemscope itemtype="https://schema.org/Product">
+        <article class="product" data-product-id="ananasovij-ulun" itemscope itemtype="https://schema.org/Product">
             <div class="product__container">
                 <section class="product__gallery" aria-label="Изображение товара">
                     <button class="product__image-trigger" id="imageTrigger" type="button"
@@ -100,7 +109,7 @@
             <img class="image-dialog__img" id="imageDialogImg" src="" alt="">
         </dialog>
     </main>
-    <script src="index.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
