@@ -13,15 +13,16 @@
         <article class="product" itemscope itemtype="https://schema.org/Product">
             <div class="product__container">
                 <section class="product__gallery" aria-label="Изображение товара">
-                    <img class="product__image" src="assets/product.svg" width="320" height="320"
-                        alt="Пачка чая «Ананасовый улун» Teaboom" itemprop="image">
+                    <img class="product__image" id="productImage" src="assets/ulun.webp"
+                        data-fallback="assets/product.svg" width="320" height="320"
+                        alt="Ананасовый улун — чайные листья с кусочками цукатов" itemprop="image">
                 </section>
 
                 <section class="product__info">
                     <nav class="product__breadcrumbs" aria-label="Хлебные крошки">
                         <ol>
-                            <li><a href="#">Улун</a></li>
-                            <li><a href="#">Ароматизированный улун</a></li>
+                            <li><a href="javascript:void(0)">Улун</a></li>
+                            <li><a href="javascript:void(0)">Ароматизированный улун</a></li>
                             <li aria-current="page">Китайский светлый ароматизированный улун</li>
                         </ol>
                     </nav>
@@ -62,9 +63,16 @@
                         <meta itemprop="priceCurrency" content="RUB">
                     </div>
 
-                    <button class="product__cart-btn" id="cartBtn" type="button">
-                        <span id="cartBtnText">В корзину</span>
-                    </button>
+                    <div class="product__cart">
+                        <button class="product__add" id="addBtn" type="button">В корзину</button>
+                        <div class="product__stepper" id="stepper" hidden>
+                            <button class="product__step" id="stepMinus" type="button"
+                                aria-label="Уменьшить количество">−</button>
+                            <span class="product__qty" id="qty" aria-live="polite">1</span>
+                            <button class="product__step" id="stepPlus" type="button"
+                                aria-label="Увеличить количество">+</button>
+                        </div>
+                    </div>
 
                     <section class="product__description" itemprop="description">
                         <h2 class="product__description-title">Описание</h2>
