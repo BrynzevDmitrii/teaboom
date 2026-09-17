@@ -26,10 +26,26 @@ body {
     justify-content: center;
 }
 
-.product__image {
+.product__image-trigger {
+    position: relative;
     display: block;
     width: 100%;
     max-width: 320px;
+    padding: 0;
+    border: none;
+    background: none;
+    border-radius: 12px;
+    cursor: zoom-in;
+}
+
+.product__image-trigger:focus-visible {
+    outline: 2px solid #3f7a52;
+    outline-offset: 3px;
+}
+
+.product__image {
+    display: block;
+    width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
     border-radius: 12px;
@@ -40,6 +56,26 @@ body {
 .product__image--fallback {
     object-fit: contain;
     padding: 24px;
+}
+
+.product__zoom-icon {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    color: #2b2b2b;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.15s ease;
+}
+
+.product__image-trigger:hover .product__zoom-icon {
+    background: #fff;
 }
 
 /* Breadcrumbs */
@@ -299,7 +335,7 @@ body {
         min-width: 0;
     }
 
-    .product__image {
+    .product__image-trigger {
         max-width: 100%;
     }
 
@@ -345,4 +381,56 @@ body {
     .product__price {
         font-size: 32px;
     }
+}
+
+/* Image dialog */
+
+.image-dialog {
+    margin: auto;
+    border: none;
+    padding: 12px;
+    background: transparent;
+    max-width: 92vw;
+    max-height: 92vh;
+}
+
+.image-dialog[open] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.image-dialog::backdrop {
+    background: rgba(20, 20, 20, 0.72);
+}
+
+.image-dialog__close {
+    align-self: flex-end;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    color: #2b2b2b;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.image-dialog__close:hover {
+    background: #eee;
+}
+
+.image-dialog__close:focus-visible {
+    outline: 2px solid #3f7a52;
+    outline-offset: 2px;
+}
+
+.image-dialog__img {
+    display: block;
+    max-width: 100%;
+    max-height: calc(92vh - 60px);
+    border-radius: 12px;
+    margin: 0 auto;
 }
